@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NFL Stadiums Map Project</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --panel: #111827;
+            --accent: #38bdf8;
+            --muted: #cbd5e1;
+            --text: #e2e8f0;
+            --border: #1f2937;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+            background: radial-gradient(circle at 20% 20%, rgba(56,189,248,0.08), transparent 40%),
+                        radial-gradient(circle at 80% 0%, rgba(99,102,241,0.08), transparent 35%),
+                        var(--bg);
+            color: var(--text);
+        }
+        header {
+            padding: 48px 20px 32px;
+            text-align: center;
+        }
+        .title {
+            font-size: 32px;
+            margin: 0 0 12px;
+            letter-spacing: -0.5px;
+        }
+        .subtitle {
+            color: var(--muted);
+            margin: 0 auto;
+            max-width: 720px;
+            line-height: 1.6;
+        }
+        .cta {
+            margin-top: 24px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            border: 1px solid var(--accent);
+            background: linear-gradient(90deg, #0ea5e9, #22d3ee);
+            color: #0b1120;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(34,211,238,0.25);
+            transition: transform 150ms ease, box-shadow 150ms ease;
+        }
+        .btn:hover { transform: translateY(-1px); box-shadow: 0 14px 36px rgba(34,211,238,0.35); }
+        .btn:active { transform: translateY(0); }
+        main {
+            max-width: 960px;
+            margin: 0 auto 56px;
+            padding: 0 20px;
+        }
+        .card {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 20px 22px;
+            margin-bottom: 18px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+        }
+        .section-title {
+            margin: 0 0 10px;
+            font-size: 18px;
+            color: var(--accent);
+            letter-spacing: 0.2px;
+        }
+        .body-text {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.65;
+        }
+        .list { margin: 6px 0 0 16px; color: var(--muted); }
+        .code-block {
+            background: #0b1224;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px;
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+        pre { margin: 0; color: #d1d5db; font-family: "JetBrains Mono", "Fira Code", monospace; font-size: 13px; line-height: 1.5; }
+        a.inline { color: var(--accent); text-decoration: none; }
+        a.inline:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">NFL Stadiums Map Project</h1>
+        <p class="subtitle">An interactive map of every current NFL stadium in the United States. Click any marker to see who plays there and key facts pulled from live Wikipedia data.</p>
+        <div class="cta">
+            <a class="btn" href="stadiums_map.html">Open the Map</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2 class="section-title">1. Objective</h2>
+            <p class="body-text">Create a website that displays a U.S. map with all NFL stadiums marked. Users can click each stadium to view quick facts.</p>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">2. Web Scraping</h2>
+            <p class="body-text">Source: <a class="inline" href="https://en.wikipedia.org/wiki/List_of_current_NFL_stadiums" target="_blank" rel="noopener">Wikipedia stadium list</a>. Tools: requests, BeautifulSoup, pandas, geopy.</p>
+            <div class="code-block">
+                <pre>import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+url = "https://en.wikipedia.org/wiki/List_of_current_NFL_stadiums"
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+}
+response = requests.get(url, headers=headers)</pre>
+            </div>
+            <p class="body-text" style="margin-top: 10px;">AI assist prompt used for the scraper: “Good afternoon! I would like to get some information from a Wikipedia page via webscraping, using the requests libray and beautiful soup. Here is the url: https://en.wikipedia.org/wiki/List_of_current_NFL_stadiums I have created a file called scrape.py where I want to build my script.”</p>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">3. Database</h2>
+            <p class="body-text">Columns: Name, Capacity, Location, Surface, Roof, Opened (plus image and coordinates). Exported CSV: <strong>nfl_stadiums.csv</strong>.</p>
+            <p class="body-text" style="margin-top: 8px;">Example query:</p>
+            <div class="code-block">
+                <pre>SELECT Name, Capacity, Location, Surface, Roof, Opened
+FROM Stadiums;</pre>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">4. Web Application</h2>
+            <p class="body-text">Interactive Folium map of the U.S. with markers for every stadium. Clicking a marker reveals the team, location, capacity, surface, roof type, year opened, and an image pulled from Wikipedia.</p>
+        </section>
+
+        <section class="card" style="text-align: center;">
+            <h2 class="section-title">Repository</h2>
+            <p class="body-text">This link goes to the GitHub repository:</p>
+            <a class="btn" href="https://github.com/nathanbarski/Football-Final" target="_blank" rel="noopener">Open GitHub Repository</a>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_21876c851ebae36eb5d4d9cc515c6e9c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_21876c851ebae36eb5d4d9cc515c6e9c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_21876c851ebae36eb5d4d9cc515c6e9c = L.map(
+                "map_21876c851ebae36eb5d4d9cc515c6e9c",
+                {
+                    center: [37.58402358, -90.18366357666669],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_94cbde46d23a015c10b719e0a07b4db8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_94cbde46d23a015c10b719e0a07b4db8.addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var marker_0765ac2c080b00910d1e1830d13cdf21 = L.marker(
+                [40.4406968, -80.0025666],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_02d6a43737183c8aabbb5c82766f3a3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1fc31bbd8803275c5f78ff134f5c853d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c97f77db72dfa1145dbbba35095ab40d = $(`<div id="html_c97f77db72dfa1145dbbba35095ab40d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Acrisure Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Pittsburgh Steelers</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Pittsburgh, Pennsylvania</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">68,400</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Kentucky bluegrass</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2001</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/SteelersWarmUp.JPG/120px-SteelersWarmUp.JPG" alt="Acrisure Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_1fc31bbd8803275c5f78ff134f5c853d.setContent(html_c97f77db72dfa1145dbbba35095ab40d);
+            
+        
+
+        marker_0765ac2c080b00910d1e1830d13cdf21.bindPopup(popup_1fc31bbd8803275c5f78ff134f5c853d)
+        ;
+
+        
+    
+    
+            marker_0765ac2c080b00910d1e1830d13cdf21.bindTooltip(
+                `<div>
+                     Acrisure Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0765ac2c080b00910d1e1830d13cdf21.setIcon(icon_02d6a43737183c8aabbb5c82766f3a3e);
+            
+    
+            var marker_0dd360049e405177a3cf3aa318efe2e7 = L.marker(
+                [36.0724299, -115.1474756],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_3655b3217f91b51ce2e3f4f813ab61ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2531762caa714f5cf2e83de42ff917d5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3097889bdbe2199ae7df911672e1949b = $(`<div id="html_3097889bdbe2199ae7df911672e1949b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Allegiant Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Las Vegas Raiders</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Paradise, Nevada</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">65,000</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Bermuda grass</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Translucent</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2020</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/2022_Las_Vegas_Bowl_Allegiant_Stadium.jpg/120px-2022_Las_Vegas_Bowl_Allegiant_Stadium.jpg" alt="Allegiant Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_2531762caa714f5cf2e83de42ff917d5.setContent(html_3097889bdbe2199ae7df911672e1949b);
+            
+        
+
+        marker_0dd360049e405177a3cf3aa318efe2e7.bindPopup(popup_2531762caa714f5cf2e83de42ff917d5)
+        ;
+
+        
+    
+    
+            marker_0dd360049e405177a3cf3aa318efe2e7.bindTooltip(
+                `<div>
+                     Allegiant Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0dd360049e405177a3cf3aa318efe2e7.setIcon(icon_3655b3217f91b51ce2e3f4f813ab61ec);
+            
+    
+            var marker_24440ad3adc32adc3584a5b79018b5e2 = L.marker(
+                [39.100105, -94.5781416],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_d3281977ccca9451da20658003807850 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b42d22b667f300c814220de7ffe63a9e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_178dcb76ac308f0776f351966b15bc71 = $(`<div id="html_178dcb76ac308f0776f351966b15bc71" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Arrowhead Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Kansas City Chiefs</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Kansas City, Missouri</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">76,416</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Bermuda grass</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">1972</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Arrowhead_Stadium_%28October_27%2C_2019_-_4%29.jpg/120px-Arrowhead_Stadium_%28October_27%2C_2019_-_4%29.jpg" alt="Arrowhead Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_b42d22b667f300c814220de7ffe63a9e.setContent(html_178dcb76ac308f0776f351966b15bc71);
+            
+        
+
+        marker_24440ad3adc32adc3584a5b79018b5e2.bindPopup(popup_b42d22b667f300c814220de7ffe63a9e)
+        ;
+
+        
+    
+    
+            marker_24440ad3adc32adc3584a5b79018b5e2.bindTooltip(
+                `<div>
+                     Arrowhead Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_24440ad3adc32adc3584a5b79018b5e2.setIcon(icon_d3281977ccca9451da20658003807850);
+            
+    
+            var marker_e367847ef04d57f56d231e8c25fed5ba = L.marker(
+                [32.7355816, -97.1071186],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_1681e0a0cd3578bf062e1e1be0fe831f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad8b22600205fb40e135d849bb5db61f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e8af02030972534452cae9af98cd04ea = $(`<div id="html_e8af02030972534452cae9af98cd04ea" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">AT&T Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Dallas Cowboys</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Arlington, Texas</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">80,000</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Artificial</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Retractable</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2009</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/AT%26T_Stadium_2022-08-24.jpg/120px-AT%26T_Stadium_2022-08-24.jpg" alt="AT&T Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_ad8b22600205fb40e135d849bb5db61f.setContent(html_e8af02030972534452cae9af98cd04ea);
+            
+        
+
+        marker_e367847ef04d57f56d231e8c25fed5ba.bindPopup(popup_ad8b22600205fb40e135d849bb5db61f)
+        ;
+
+        
+    
+    
+            marker_e367847ef04d57f56d231e8c25fed5ba.bindTooltip(
+                `<div>
+                     AT&T Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e367847ef04d57f56d231e8c25fed5ba.setIcon(icon_1681e0a0cd3578bf062e1e1be0fe831f);
+            
+    
+            var marker_e875a4852d394640b9ae9bdb68fa4386 = L.marker(
+                [35.2272086, -80.8430827],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_e16689520d09448159dff0beb549a4be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5947eea411fe6b9781a26cd59ea4d567 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fcb68b7643e3e4b45ba8dd4d9b362e5a = $(`<div id="html_fcb68b7643e3e4b45ba8dd4d9b362e5a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Bank of America Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Carolina Panthers</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Charlotte, North Carolina</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">75,037</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">FieldTurf</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">1996</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/BofAStadium2015.JPG/120px-BofAStadium2015.JPG" alt="Bank of America Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_5947eea411fe6b9781a26cd59ea4d567.setContent(html_fcb68b7643e3e4b45ba8dd4d9b362e5a);
+            
+        
+
+        marker_e875a4852d394640b9ae9bdb68fa4386.bindPopup(popup_5947eea411fe6b9781a26cd59ea4d567)
+        ;
+
+        
+    
+    
+            marker_e875a4852d394640b9ae9bdb68fa4386.bindTooltip(
+                `<div>
+                     Bank of America Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e875a4852d394640b9ae9bdb68fa4386.setIcon(icon_e16689520d09448159dff0beb549a4be);
+            
+    
+            var marker_6f051ff31973738ab47bec6512f611bb = L.marker(
+                [29.9559145, -90.0730259],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_f12055a2abc9445b83d308e9cf710ac5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9eda7f63e842175c11b4fec010370be = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_79acb0807f8421f6eb84874799bfad79 = $(`<div id="html_79acb0807f8421f6eb84874799bfad79" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Caesars Superdome</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">New Orleans Saints</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">New Orleans, Louisiana</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">73,208</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Artificial</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Dome</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">1975</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/The_Dome_New_Orleans_Man_Trip.jpg/120px-The_Dome_New_Orleans_Man_Trip.jpg" alt="Caesars Superdome" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_b9eda7f63e842175c11b4fec010370be.setContent(html_79acb0807f8421f6eb84874799bfad79);
+            
+        
+
+        marker_6f051ff31973738ab47bec6512f611bb.bindPopup(popup_b9eda7f63e842175c11b4fec010370be)
+        ;
+
+        
+    
+    
+            marker_6f051ff31973738ab47bec6512f611bb.bindTooltip(
+                `<div>
+                     Caesars Superdome
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6f051ff31973738ab47bec6512f611bb.setIcon(icon_f12055a2abc9445b83d308e9cf710ac5);
+            
+    
+            var marker_a51081202aa3c034a356f3d1f7ab1a79 = L.marker(
+                [39.7392364, -104.984862],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_b9121f056640e2365879ab7b2d909f52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6dde55b487363f959fa7a3404dc28b03 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4c8ea8acd7665bafdf48621e98a4f769 = $(`<div id="html_4c8ea8acd7665bafdf48621e98a4f769" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Empower Field at Mile High</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Denver Broncos</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Denver, Colorado</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">76,125</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Kentucky bluegrass</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2001</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/SAF_at_Mile_High_AFC_Championship_game_pom-poms.jpg/120px-SAF_at_Mile_High_AFC_Championship_game_pom-poms.jpg" alt="Empower Field at Mile High" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_6dde55b487363f959fa7a3404dc28b03.setContent(html_4c8ea8acd7665bafdf48621e98a4f769);
+            
+        
+
+        marker_a51081202aa3c034a356f3d1f7ab1a79.bindPopup(popup_6dde55b487363f959fa7a3404dc28b03)
+        ;
+
+        
+    
+    
+            marker_a51081202aa3c034a356f3d1f7ab1a79.bindTooltip(
+                `<div>
+                     Empower Field at Mile High
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a51081202aa3c034a356f3d1f7ab1a79.setIcon(icon_b9121f056640e2365879ab7b2d909f52);
+            
+    
+            var marker_ec1461eb77d3c6ce7665ca729a3be75a = L.marker(
+                [30.3321838, -81.655651],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_13b1a60523123c3565b0433d2f4ac0bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_981b3f74c321beae892a5e01d88127de = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7b377305ee78ba1c3bbd6041f290e294 = $(`<div id="html_7b377305ee78ba1c3bbd6041f290e294" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">EverBank Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Jacksonville Jaguars</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Jacksonville, Florida</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">69,132</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Bermuda grass</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">1995</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Chiefs_at_Jaguars_%2853314666155%29.jpg/120px-Chiefs_at_Jaguars_%2853314666155%29.jpg" alt="EverBank Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_981b3f74c321beae892a5e01d88127de.setContent(html_7b377305ee78ba1c3bbd6041f290e294);
+            
+        
+
+        marker_ec1461eb77d3c6ce7665ca729a3be75a.bindPopup(popup_981b3f74c321beae892a5e01d88127de)
+        ;
+
+        
+    
+    
+            marker_ec1461eb77d3c6ce7665ca729a3be75a.bindTooltip(
+                `<div>
+                     EverBank Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ec1461eb77d3c6ce7665ca729a3be75a.setIcon(icon_13b1a60523123c3565b0433d2f4ac0bd);
+            
+    
+            var marker_f065dfb8b6e4d9b6c422505f52e54aba = L.marker(
+                [42.3315509, -83.0466403],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_ef9d9574da2048369b44309fc8ae0738 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96cc3d899b68cb0fe7eed17eebbaf072 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_48d4efc3b61b7785e049c590b4d63cb5 = $(`<div id="html_48d4efc3b61b7785e049c590b4d63cb5" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Ford Field</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Detroit Lions</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Detroit, Michigan</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">65,000</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">FieldTurf</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Dome</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2002</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Packers_at_Lions_Dec_2020_%2850715608723%29.jpg/120px-Packers_at_Lions_Dec_2020_%2850715608723%29.jpg" alt="Ford Field" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_96cc3d899b68cb0fe7eed17eebbaf072.setContent(html_48d4efc3b61b7785e049c590b4d63cb5);
+            
+        
+
+        marker_f065dfb8b6e4d9b6c422505f52e54aba.bindPopup(popup_96cc3d899b68cb0fe7eed17eebbaf072)
+        ;
+
+        
+    
+    
+            marker_f065dfb8b6e4d9b6c422505f52e54aba.bindTooltip(
+                `<div>
+                     Ford Field
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f065dfb8b6e4d9b6c422505f52e54aba.setIcon(icon_ef9d9574da2048369b44309fc8ae0738);
+            
+    
+            var marker_3f00bda362be3d6cccc642641f3dd9be = L.marker(
+                [42.0653768, -71.2478308],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_ac7103e9e5dbb1be28aac9c5f2f582ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f48d909b32c9de635017806d0e0c7303 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4ace8503460b3167f9ea43b9a3cea31a = $(`<div id="html_4ace8503460b3167f9ea43b9a3cea31a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Gillette Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">New England Patriots</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Foxborough, Massachusetts</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">66,829</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">FieldTurf</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2002</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Gillette_Stadium02.jpg/120px-Gillette_Stadium02.jpg" alt="Gillette Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_f48d909b32c9de635017806d0e0c7303.setContent(html_4ace8503460b3167f9ea43b9a3cea31a);
+            
+        
+
+        marker_3f00bda362be3d6cccc642641f3dd9be.bindPopup(popup_f48d909b32c9de635017806d0e0c7303)
+        ;
+
+        
+    
+    
+            marker_3f00bda362be3d6cccc642641f3dd9be.bindTooltip(
+                `<div>
+                     Gillette Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3f00bda362be3d6cccc642641f3dd9be.setIcon(icon_ac7103e9e5dbb1be28aac9c5f2f582ec);
+            
+    
+            var marker_d73cf36f641fd7bcd2fb1b4411e2e882 = L.marker(
+                [25.9420377, -80.2456045],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_1f57091f73f8410509298265fd8c0d29 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0c8025f426debb362ec09412ba1622f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d3166263cf828d6104b205641d2950d2 = $(`<div id="html_d3166263cf828d6104b205641d2950d2" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Hard Rock Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Miami Dolphins</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Miami Gardens, Florida</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">65,326</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Bermuda grass</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">1987</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Interior_of_updated_Hard_Rock_Stadium.jpg/120px-Interior_of_updated_Hard_Rock_Stadium.jpg" alt="Hard Rock Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_d0c8025f426debb362ec09412ba1622f.setContent(html_d3166263cf828d6104b205641d2950d2);
+            
+        
+
+        marker_d73cf36f641fd7bcd2fb1b4411e2e882.bindPopup(popup_d0c8025f426debb362ec09412ba1622f)
+        ;
+
+        
+    
+    
+            marker_d73cf36f641fd7bcd2fb1b4411e2e882.bindTooltip(
+                `<div>
+                     Hard Rock Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d73cf36f641fd7bcd2fb1b4411e2e882.setIcon(icon_1f57091f73f8410509298265fd8c0d29);
+            
+    
+            var marker_ff2c6729aead3253e00d22c36f92b994 = L.marker(
+                [42.7670376, -78.7435517],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_9eb12e34b0ce59f5090bd810fdc1804b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba50251bc69d1f7d3c9333f567650fa1 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_77193e0595d02dfa7b0904404d2aa483 = $(`<div id="html_77193e0595d02dfa7b0904404d2aa483" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Highmark Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Buffalo Bills</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Orchard Park, New York</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">71,608</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Artificial</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">1973</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Highmark_Stadium_in_2023_-_Quintin_Soloviev.jpg/120px-Highmark_Stadium_in_2023_-_Quintin_Soloviev.jpg" alt="Highmark Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_ba50251bc69d1f7d3c9333f567650fa1.setContent(html_77193e0595d02dfa7b0904404d2aa483);
+            
+        
+
+        marker_ff2c6729aead3253e00d22c36f92b994.bindPopup(popup_ba50251bc69d1f7d3c9333f567650fa1)
+        ;
+
+        
+    
+    
+            marker_ff2c6729aead3253e00d22c36f92b994.bindTooltip(
+                `<div>
+                     Highmark Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ff2c6729aead3253e00d22c36f92b994.setIcon(icon_9eb12e34b0ce59f5090bd810fdc1804b);
+            
+    
+            var marker_dc43387c78cf231853991db758be5ada = L.marker(
+                [41.4996574, -81.6936772],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_85482508f0675f1a8d16db34fcd062c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e89684b07eb3fc7d64ea189ab8fb9b8b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_88b0c1e97a1c8cfbb3ed5fc432cdff98 = $(`<div id="html_88b0c1e97a1c8cfbb3ed5fc432cdff98" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Huntington Bank Field</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Cleveland Browns</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Cleveland, Ohio</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">67,895</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Kentucky bluegrass</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">1999</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/FirstEnergy_Stadium_50_yardline_panorama.png/120px-FirstEnergy_Stadium_50_yardline_panorama.png" alt="Huntington Bank Field" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_e89684b07eb3fc7d64ea189ab8fb9b8b.setContent(html_88b0c1e97a1c8cfbb3ed5fc432cdff98);
+            
+        
+
+        marker_dc43387c78cf231853991db758be5ada.bindPopup(popup_e89684b07eb3fc7d64ea189ab8fb9b8b)
+        ;
+
+        
+    
+    
+            marker_dc43387c78cf231853991db758be5ada.bindTooltip(
+                `<div>
+                     Huntington Bank Field
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dc43387c78cf231853991db758be5ada.setIcon(icon_85482508f0675f1a8d16db34fcd062c2);
+            
+    
+            var marker_8a353d59a110db9f3e2d402e5a79df6b = L.marker(
+                [44.5126379, -88.0125794],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_267224d67cf35128fb21c3d53d310cbb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46b2bd8fedea2509dd825a44a34749f3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f7be420bb6c2c46c38c47edab9543bae = $(`<div id="html_f7be420bb6c2c46c38c47edab9543bae" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Lambeau Field</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Green Bay Packers</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Green Bay, Wisconsin</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">81,441</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Hybrid grass</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">1957</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Lambeau_Field_panorama.jpg/120px-Lambeau_Field_panorama.jpg" alt="Lambeau Field" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_46b2bd8fedea2509dd825a44a34749f3.setContent(html_f7be420bb6c2c46c38c47edab9543bae);
+            
+        
+
+        marker_8a353d59a110db9f3e2d402e5a79df6b.bindPopup(popup_46b2bd8fedea2509dd825a44a34749f3)
+        ;
+
+        
+    
+    
+            marker_8a353d59a110db9f3e2d402e5a79df6b.bindTooltip(
+                `<div>
+                     Lambeau Field
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8a353d59a110db9f3e2d402e5a79df6b.setIcon(icon_267224d67cf35128fb21c3d53d310cbb);
+            
+    
+            var marker_75dd6d8bb985707b41fccd7a0f853b47 = L.marker(
+                [37.3541132, -121.955174],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_d4624f83ab1bc464c175d0270de433b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39df920ad947950a4de789ac27c12ab1 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3fd0b0a6f4ad6817c5ce0d0f28e33a59 = $(`<div id="html_3fd0b0a6f4ad6817c5ce0d0f28e33a59" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Levi's Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">San Francisco 49ers</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Santa Clara, California</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">68,500</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Bermuda grass</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2014</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Broncos_vs_49ers_preseason_game_at_Levi%27s_Stadium.jpg/120px-Broncos_vs_49ers_preseason_game_at_Levi%27s_Stadium.jpg" alt="Levi's Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_39df920ad947950a4de789ac27c12ab1.setContent(html_3fd0b0a6f4ad6817c5ce0d0f28e33a59);
+            
+        
+
+        marker_75dd6d8bb985707b41fccd7a0f853b47.bindPopup(popup_39df920ad947950a4de789ac27c12ab1)
+        ;
+
+        
+    
+    
+            marker_75dd6d8bb985707b41fccd7a0f853b47.bindTooltip(
+                `<div>
+                     Levi's Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75dd6d8bb985707b41fccd7a0f853b47.setIcon(icon_d4624f83ab1bc464c175d0270de433b1);
+            
+    
+            var marker_a683fef927f37bbd1335ce6bbc26d93f = L.marker(
+                [39.9527237, -75.1635262],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_16bb8230d395e304218829529e579f52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50dd02b160c7ba6b6f8b768ee9459755 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_33da5863e0eb50264902cf0f297c01d9 = $(`<div id="html_33da5863e0eb50264902cf0f297c01d9" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Lincoln Financial Field</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Philadelphia Eagles</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Philadelphia, Pennsylvania</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">69,596</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">GrassMaster</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2003</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/2017-18_NFC_championship_game.jpg/120px-2017-18_NFC_championship_game.jpg" alt="Lincoln Financial Field" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_50dd02b160c7ba6b6f8b768ee9459755.setContent(html_33da5863e0eb50264902cf0f297c01d9);
+            
+        
+
+        marker_a683fef927f37bbd1335ce6bbc26d93f.bindPopup(popup_50dd02b160c7ba6b6f8b768ee9459755)
+        ;
+
+        
+    
+    
+            marker_a683fef927f37bbd1335ce6bbc26d93f.bindTooltip(
+                `<div>
+                     Lincoln Financial Field
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a683fef927f37bbd1335ce6bbc26d93f.setIcon(icon_16bb8230d395e304218829529e579f52);
+            
+    
+            var marker_0e68fc231f9855b9eec8152d35059297 = L.marker(
+                [39.7683331, -86.1583502],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_ba0746cf4dfcbd8164379727ff3e5901 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a70c2622b483a53fb8bdaa5c675f9052 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a96165cce22cdb4361f8419dedf7ef92 = $(`<div id="html_a96165cce22cdb4361f8419dedf7ef92" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Lucas Oil Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Indianapolis Colts</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Indianapolis, Indiana</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">67,000</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Artificial</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Retractable</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2008</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/LucasOilStadiumTheLuke.jpg/120px-LucasOilStadiumTheLuke.jpg" alt="Lucas Oil Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_a70c2622b483a53fb8bdaa5c675f9052.setContent(html_a96165cce22cdb4361f8419dedf7ef92);
+            
+        
+
+        marker_0e68fc231f9855b9eec8152d35059297.bindPopup(popup_a70c2622b483a53fb8bdaa5c675f9052)
+        ;
+
+        
+    
+    
+            marker_0e68fc231f9855b9eec8152d35059297.bindTooltip(
+                `<div>
+                     Lucas Oil Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0e68fc231f9855b9eec8152d35059297.setIcon(icon_ba0746cf4dfcbd8164379727ff3e5901);
+            
+    
+            var marker_8682d938e829303808e91bb9af7a9ee3 = L.marker(
+                [47.6038321, -122.330062],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_12cf4c2080393012d1e7848efe9d9e2f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23ba562829400815b1278257df18e1c9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b9ceca78195cc082f6b3b2a5b47b9cf6 = $(`<div id="html_b9ceca78195cc082f6b3b2a5b47b9cf6" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Lumen Field</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Seattle Seahawks</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Seattle, Washington</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">69,000</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">FieldTurf</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2002</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/CenturyLink_Field_panorama_2016.jpg/120px-CenturyLink_Field_panorama_2016.jpg" alt="Lumen Field" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_23ba562829400815b1278257df18e1c9.setContent(html_b9ceca78195cc082f6b3b2a5b47b9cf6);
+            
+        
+
+        marker_8682d938e829303808e91bb9af7a9ee3.bindPopup(popup_23ba562829400815b1278257df18e1c9)
+        ;
+
+        
+    
+    
+            marker_8682d938e829303808e91bb9af7a9ee3.bindTooltip(
+                `<div>
+                     Lumen Field
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8682d938e829303808e91bb9af7a9ee3.setIcon(icon_12cf4c2080393012d1e7848efe9d9e2f);
+            
+    
+            var marker_bc7f550c47f13787e70293676995c1e0 = L.marker(
+                [39.2908816, -76.610759],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_0bc2b4627c9410f03f98ef886fb6bcbd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de67354cd29f19e45fdbe991ccb5f4d7 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_28cda819a0dacc442e95bbb3883dc239 = $(`<div id="html_28cda819a0dacc442e95bbb3883dc239" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">M&T Bank Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Baltimore Ravens</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Baltimore, Maryland</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">71,008</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Bermuda–ryegrass</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">1998</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/M%26T_Bank_Stadium_DoD.jpg/120px-M%26T_Bank_Stadium_DoD.jpg" alt="M&T Bank Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_de67354cd29f19e45fdbe991ccb5f4d7.setContent(html_28cda819a0dacc442e95bbb3883dc239);
+            
+        
+
+        marker_bc7f550c47f13787e70293676995c1e0.bindPopup(popup_de67354cd29f19e45fdbe991ccb5f4d7)
+        ;
+
+        
+    
+    
+            marker_bc7f550c47f13787e70293676995c1e0.bindTooltip(
+                `<div>
+                     M&T Bank Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bc7f550c47f13787e70293676995c1e0.setIcon(icon_0bc2b4627c9410f03f98ef886fb6bcbd);
+            
+    
+            var marker_6a9ef6f29309579ffe34e237f10ba1a0 = L.marker(
+                [33.7544657, -84.3898151],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_c39127ae77efca72fb3a322bbc1485cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67e65256383d4a6e22271506b862a0d8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_2eeb5ab5e03b452c4ef94e13243f33a7 = $(`<div id="html_2eeb5ab5e03b452c4ef94e13243f33a7" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Mercedes-Benz Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Atlanta Falcons</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Atlanta, Georgia</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">71,000</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">FieldTurf</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Retractable</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2017</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Peach_Bowl_Pre-game_%2839431667481%29.jpg/120px-Peach_Bowl_Pre-game_%2839431667481%29.jpg" alt="Mercedes-Benz Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_67e65256383d4a6e22271506b862a0d8.setContent(html_2eeb5ab5e03b452c4ef94e13243f33a7);
+            
+        
+
+        marker_6a9ef6f29309579ffe34e237f10ba1a0.bindPopup(popup_67e65256383d4a6e22271506b862a0d8)
+        ;
+
+        
+    
+    
+            marker_6a9ef6f29309579ffe34e237f10ba1a0.bindTooltip(
+                `<div>
+                     Mercedes-Benz Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6a9ef6f29309579ffe34e237f10ba1a0.setIcon(icon_c39127ae77efca72fb3a322bbc1485cc);
+            
+    
+            var marker_63ad8a34087f44942cbc513a3622c764 = L.marker(
+                [40.833989, -74.0970865],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_33d16adf1bb6e0b97197e81ee9d5bc34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48d9801438169bcbdf27c35ead910780 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3fa0cfdf2a7c6d7059e94c588cf35ad6 = $(`<div id="html_3fa0cfdf2a7c6d7059e94c588cf35ad6" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">MetLife Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">New York GiantsNew York Jets</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">East Rutherford, New Jersey</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">82,500</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">FieldTurf</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2010</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/MetLife_Stadium%2C_Jets.jpg/120px-MetLife_Stadium%2C_Jets.jpg" alt="MetLife Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_48d9801438169bcbdf27c35ead910780.setContent(html_3fa0cfdf2a7c6d7059e94c588cf35ad6);
+            
+        
+
+        marker_63ad8a34087f44942cbc513a3622c764.bindPopup(popup_48d9801438169bcbdf27c35ead910780)
+        ;
+
+        
+    
+    
+            marker_63ad8a34087f44942cbc513a3622c764.bindTooltip(
+                `<div>
+                     MetLife Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_63ad8a34087f44942cbc513a3622c764.setIcon(icon_33d16adf1bb6e0b97197e81ee9d5bc34);
+            
+    
+            var marker_16472cc51242314b6d8361453cdfe331 = L.marker(
+                [36.1622767, -86.7742984],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_46ab59f82173898049732b671affe1b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_516d7b9889f382e74bcaeff4f267ea42 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6510a1fad6e1a3192ffb090ca9f48b0b = $(`<div id="html_6510a1fad6e1a3192ffb090ca9f48b0b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Nissan Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Tennessee Titans</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Nashville, Tennessee</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">69,143</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Artificial</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">1999</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Night_Settles_on_LP_Field.jpg/120px-Night_Settles_on_LP_Field.jpg" alt="Nissan Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_516d7b9889f382e74bcaeff4f267ea42.setContent(html_6510a1fad6e1a3192ffb090ca9f48b0b);
+            
+        
+
+        marker_16472cc51242314b6d8361453cdfe331.bindPopup(popup_516d7b9889f382e74bcaeff4f267ea42)
+        ;
+
+        
+    
+    
+            marker_16472cc51242314b6d8361453cdfe331.bindTooltip(
+                `<div>
+                     Nissan Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_16472cc51242314b6d8361453cdfe331.setIcon(icon_46ab59f82173898049732b671affe1b6);
+            
+    
+            var marker_bb19cd9c60a43476132625c82d9cd047 = L.marker(
+                [38.9253129, -76.8815433],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_5490fb7567a6d824bb46091441494ff7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_676cf310ac806779e7ad5c41a08a9558 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0c969666381525e569c84d3f0f412382 = $(`<div id="html_0c969666381525e569c84d3f0f412382" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Northwest Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Washington Commanders</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Landover, Maryland</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">64,000</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Bermuda grass</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">1997</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Commanders_vs_Giants_%2853345178211%29.jpg/120px-Commanders_vs_Giants_%2853345178211%29.jpg" alt="Northwest Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_676cf310ac806779e7ad5c41a08a9558.setContent(html_0c969666381525e569c84d3f0f412382);
+            
+        
+
+        marker_bb19cd9c60a43476132625c82d9cd047.bindPopup(popup_676cf310ac806779e7ad5c41a08a9558)
+        ;
+
+        
+    
+    
+            marker_bb19cd9c60a43476132625c82d9cd047.bindTooltip(
+                `<div>
+                     Northwest Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bb19cd9c60a43476132625c82d9cd047.setIcon(icon_5490fb7567a6d824bb46091441494ff7);
+            
+    
+            var marker_1c430b5d8bebd83a8e31436aea8182fa = L.marker(
+                [29.7589382, -95.3676974],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_e1cf9e4a74742ff43ce86f411f5d8fcc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bdbd3c421141ac60c0e892c8c1a1506 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1ec0925472586d1751ef075ae31d917a = $(`<div id="html_1ec0925472586d1751ef075ae31d917a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">NRG Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Houston Texans</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Houston, Texas</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">72,220</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Artificial</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Retractable</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2002</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Reliantstadium.jpg/120px-Reliantstadium.jpg" alt="NRG Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_2bdbd3c421141ac60c0e892c8c1a1506.setContent(html_1ec0925472586d1751ef075ae31d917a);
+            
+        
+
+        marker_1c430b5d8bebd83a8e31436aea8182fa.bindPopup(popup_2bdbd3c421141ac60c0e892c8c1a1506)
+        ;
+
+        
+    
+    
+            marker_1c430b5d8bebd83a8e31436aea8182fa.bindTooltip(
+                `<div>
+                     NRG Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1c430b5d8bebd83a8e31436aea8182fa.setIcon(icon_e1cf9e4a74742ff43ce86f411f5d8fcc);
+            
+    
+            var marker_484a5e3952e50ab357c6fb27d035cf75 = L.marker(
+                [39.1014537, -84.5124602],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_6d00937206d67257857662d8aeda9b97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f723d16f7d4f9b223f4741acbef8e37f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b30ce7ed920d589eae8b01db6cd9eb24 = $(`<div id="html_b30ce7ed920d589eae8b01db6cd9eb24" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Paycor Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Cincinnati Bengals</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Cincinnati, Ohio</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">65,515</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Artificial</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2000</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Paul_Brown_Stadium_interior_2017.jpg/120px-Paul_Brown_Stadium_interior_2017.jpg" alt="Paycor Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_f723d16f7d4f9b223f4741acbef8e37f.setContent(html_b30ce7ed920d589eae8b01db6cd9eb24);
+            
+        
+
+        marker_484a5e3952e50ab357c6fb27d035cf75.bindPopup(popup_f723d16f7d4f9b223f4741acbef8e37f)
+        ;
+
+        
+    
+    
+            marker_484a5e3952e50ab357c6fb27d035cf75.bindTooltip(
+                `<div>
+                     Paycor Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_484a5e3952e50ab357c6fb27d035cf75.setIcon(icon_6d00937206d67257857662d8aeda9b97);
+            
+    
+            var marker_c5e49dd190c7663b6a0a47b7f93b4d1d = L.marker(
+                [27.9449854, -82.4583107],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_5fce7caf31ef35060f68348d04f850b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0251e0d04f9188c57cc1f6050820085 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_319774e7eb34ae991fe1c7a38bfa5826 = $(`<div id="html_319774e7eb34ae991fe1c7a38bfa5826" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Raymond James Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Tampa Bay Buccaneers</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Tampa, Florida</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">65,890</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Bermuda grass</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">1998</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Raymond_James_Stadium02.JPG/120px-Raymond_James_Stadium02.JPG" alt="Raymond James Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_e0251e0d04f9188c57cc1f6050820085.setContent(html_319774e7eb34ae991fe1c7a38bfa5826);
+            
+        
+
+        marker_c5e49dd190c7663b6a0a47b7f93b4d1d.bindPopup(popup_e0251e0d04f9188c57cc1f6050820085)
+        ;
+
+        
+    
+    
+            marker_c5e49dd190c7663b6a0a47b7f93b4d1d.bindTooltip(
+                `<div>
+                     Raymond James Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c5e49dd190c7663b6a0a47b7f93b4d1d.setIcon(icon_5fce7caf31ef35060f68348d04f850b8);
+            
+    
+            var marker_c35ddbd8a4181477efab1c77d224cf07 = L.marker(
+                [33.9562003, -118.353132],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_0db192c35274b0ae14802c06160d2169 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ccb3552bb54278a31743c55eb3c7ab8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f02b30c36805e480d28822575606a441 = $(`<div id="html_f02b30c36805e480d28822575606a441" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">SoFi Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Los Angeles RamsLos Angeles Chargers</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Inglewood, California</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">70,000</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Artificial</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Translucent</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2020</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/SoFi_Stadium_interior_2021.jpg/120px-SoFi_Stadium_interior_2021.jpg" alt="SoFi Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_8ccb3552bb54278a31743c55eb3c7ab8.setContent(html_f02b30c36805e480d28822575606a441);
+            
+        
+
+        marker_c35ddbd8a4181477efab1c77d224cf07.bindPopup(popup_8ccb3552bb54278a31743c55eb3c7ab8)
+        ;
+
+        
+    
+    
+            marker_c35ddbd8a4181477efab1c77d224cf07.bindTooltip(
+                `<div>
+                     SoFi Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c35ddbd8a4181477efab1c77d224cf07.setIcon(icon_0db192c35274b0ae14802c06160d2169);
+            
+    
+            var marker_4310ea6ff6dc542b1f752c30c1e07542 = L.marker(
+                [41.8755616, -87.6244212],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_efb8c0704ddc4a4c62499eab16fed043 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_760f4fe2b4552a1025a48240c78cde69 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6ae7c78692636c39ec88229a6eb2de38 = $(`<div id="html_6ae7c78692636c39ec88229a6eb2de38" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">Soldier Field</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Chicago Bears</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Chicago, Illinois</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">61,500</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Bermuda grass</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Open-air</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">1924[a]</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Bears_vs_Eagles.jpg/120px-Bears_vs_Eagles.jpg" alt="Soldier Field" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_760f4fe2b4552a1025a48240c78cde69.setContent(html_6ae7c78692636c39ec88229a6eb2de38);
+            
+        
+
+        marker_4310ea6ff6dc542b1f752c30c1e07542.bindPopup(popup_760f4fe2b4552a1025a48240c78cde69)
+        ;
+
+        
+    
+    
+            marker_4310ea6ff6dc542b1f752c30c1e07542.bindTooltip(
+                `<div>
+                     Soldier Field
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4310ea6ff6dc542b1f752c30c1e07542.setIcon(icon_efb8c0704ddc4a4c62499eab16fed043);
+            
+    
+            var marker_329cfae8e93f71d11566f98a416bd3b6 = L.marker(
+                [33.5386858, -112.185994],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_b363833158c42664509b65b3d28856b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f91df7c2043b14b8466c9f40a47e80c4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3b8bddb490f6a66ad6fff138b550ebab = $(`<div id="html_3b8bddb490f6a66ad6fff138b550ebab" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">State Farm Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Arizona Cardinals</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Glendale, Arizona</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">63,400</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Bermuda grass</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Retractable</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2006</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Phoenix_-_State_Farm_Stadium_-_IMG_8244_%2851576996287%29.jpg/120px-Phoenix_-_State_Farm_Stadium_-_IMG_8244_%2851576996287%29.jpg" alt="State Farm Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_f91df7c2043b14b8466c9f40a47e80c4.setContent(html_3b8bddb490f6a66ad6fff138b550ebab);
+            
+        
+
+        marker_329cfae8e93f71d11566f98a416bd3b6.bindPopup(popup_f91df7c2043b14b8466c9f40a47e80c4)
+        ;
+
+        
+    
+    
+            marker_329cfae8e93f71d11566f98a416bd3b6.bindTooltip(
+                `<div>
+                     State Farm Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_329cfae8e93f71d11566f98a416bd3b6.setIcon(icon_b363833158c42664509b65b3d28856b0);
+            
+    
+            var marker_db106443bed1dafce98cecac6094e3d7 = L.marker(
+                [44.9772995, -93.2654692],
+                {
+}
+            ).addTo(map_21876c851ebae36eb5d4d9cc515c6e9c);
+        
+    
+            var icon_c4fe6a848dc52c1d09d5837c2ad37d17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba6ab91b1e82008b86420074604cb4d3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_722bc8c97c9b0f94adc62a947c8da1bf = $(`<div id="html_722bc8c97c9b0f94adc62a947c8da1bf" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial, sans-serif; width: 300px;">         <h4 style="margin-bottom: 10px; color: #2c3e50;">U.S. Bank Stadium</h4>         <table style="width: 100%; font-size: 12px; margin-bottom: 10px;">             <tr>                 <td style="font-weight: bold; padding: 3px;">Team:</td>                 <td style="padding: 3px;">Minnesota Vikings</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Location:</td>                 <td style="padding: 3px;">Minneapolis, Minnesota</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Capacity:</td>                 <td style="padding: 3px;">66,655</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Surface:</td>                 <td style="padding: 3px;">Artificial</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Roof:</td>                 <td style="padding: 3px;">Translucent</td>             </tr>             <tr>                 <td style="font-weight: bold; padding: 3px;">Opened:</td>                 <td style="padding: 3px;">2016</td>             </tr>         </table>         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Vikings-US16.jpg/120px-Vikings-US16.jpg" alt="U.S. Bank Stadium" style="width: 280px; height: auto; border-radius: 5px; margin-top: 10px;">          </div>     </div>`)[0];
+                popup_ba6ab91b1e82008b86420074604cb4d3.setContent(html_722bc8c97c9b0f94adc62a947c8da1bf);
+            
+        
+
+        marker_db106443bed1dafce98cecac6094e3d7.bindPopup(popup_ba6ab91b1e82008b86420074604cb4d3)
+        ;
+
+        
+    
+    
+            marker_db106443bed1dafce98cecac6094e3d7.bindTooltip(
+                `<div>
+                     U.S. Bank Stadium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db106443bed1dafce98cecac6094e3d7.setIcon(icon_c4fe6a848dc52c1d09d5837c2ad37d17);
+            
+</script>
+</html>
